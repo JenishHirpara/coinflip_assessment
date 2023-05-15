@@ -1,6 +1,5 @@
 # Data Pipeline Architecture
-* I have actually drawn the diagram because I wasn't aware of the tools to design the pipeline architecture. It is a simple diagram based on what I have understood from the assessment.
-![img_15.png](img_15.png)
+![img_17.png](img_17.png)
 * Extraction phase - The customers csv data is stored in AWS S3 bucket which is highly scalable and efficient mode of storage able to retrieve large amount of data quickly. The transactions json data is stored in azure blob storage. The Blob storage is mainly used for storing unstructured data including json.
 * The data is extracted using python libraries and converted to two pandas dataframes. They are then merged into one, cleansed and formatted appropriately.
 * We then load this data to aws redshift. To do this, we take the help of AWS Glue which allows us to integrate and move data from various sources quickly and efficiently especially when the data size is large. AWS Redshift is a serverless data warehouse used to analyze structured and semi-structured data. In AWS Redshift, the data rests as SQL data in a workgroup database.
