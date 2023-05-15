@@ -169,11 +169,11 @@ print("-------------------------------------------------------------------------
 # port= '5439', user= username, password= password)
 # cur = con.cursor()
 #
-# query = "select * from shoes"
+# query = "create table merged (Name varchar(255), CustomerEmail varchar(255), Phone varchar(255), Address varchar(255), TransactionID varchar(255), Date varchar(255), Time varchar(255), ProductID varchar(255), Price varchar(255))"
 # cur.execute(query)
 # print(cur.fetchone())
 # cur.close()
-# # con.commit()
+# con.commit()
 # con.close()
 
 #################################
